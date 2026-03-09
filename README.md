@@ -9,6 +9,15 @@ Configuration files for my dev environment.
 - **Ghostty** - Terminal emulator config
 - **Claude** - Settings and statusline script
 
+## Dependencies
+
+- [jq](https://jqlang.github.io/jq/) - Used by the Claude statusline script for JSON parsing
+- [lazygit](https://github.com/jesseduffield/lazygit) - Terminal UI for git commands
+
+```bash
+brew install jq lazygit
+```
+
 ## Installation
 
 ```bash

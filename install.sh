@@ -4,6 +4,19 @@ set -e
 
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+# Install Homebrew dependencies
+BREW_DEPS=(jq lazygit)
+
+if command -v brew &>/dev/null; then
+    echo "Installing dependencies via Homebrew..."
+    brew install "${BREW_DEPS[@]}"
+else
+    echo "Warning: Homebrew not found. Please install the following dependencies manually:"
+    printf '  - %s\n' "${BREW_DEPS[@]}"
+fi
+
+echo ""
+
 create_symlink() {
     local source="$1"
     local target="$2"
