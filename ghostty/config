@@ -51,12 +51,14 @@
 # Custom keybindings
 keybind = cmd+shift+t=prompt_tab_title
 
-# keybind = alt+h=goto_split:left
-# keybind = alt+j=goto_split:down
-# keybind = alt+k=goto_split:up
-# keybind = alt+l=goto_split:right
+keybind = alt+h=goto_split:left
+keybind = alt+j=goto_split:down
+keybind = alt+k=goto_split:up
+keybind = alt+l=goto_split:right
 
 keybind = global:cmd+backquote=toggle_quick_terminal
+
+keybind = cmd+enter=unbind
 
 # Set the theme
 theme = Dracula+
@@ -71,11 +73,20 @@ font-size = 12
 font-feature = -calt
 
 # Set the padding
-window-padding-x = 15
-window-padding-y = 15
+# window-padding-x = 4
+# window-padding-y = 4
 
 # Style the panes
 window-padding-color = extend
 
+# Always save the window state 
+window-save-state = always
+
+# Do not show paste warning
+clipboard-paste-protection = false
+
 # tip releases
 auto-update-channel = tip
+
+# unfocused split look
+unfocused-split-opacity = 0.4
