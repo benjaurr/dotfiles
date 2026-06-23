@@ -32,9 +32,6 @@ create_symlink() {
     echo "Linked $source -> $target"
 }
 
-# Zellij
-create_symlink "$DOTFILES_DIR/zellij/config.kdl" "$HOME/.config/zellij/config.kdl"
-
 # Neovim
 create_symlink "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
 
