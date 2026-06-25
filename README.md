@@ -8,14 +8,17 @@ Configuration files for my dev environment.
 - **Zellij** - Terminal multiplexer config
 - **Ghostty** - Terminal emulator config
 - **Claude** - Settings and statusline script
+- **Karabiner** - Keyboard customization (Caps Lock → Escape, both shifts → Caps Lock)
 
 ## Dependencies
 
 - [jq](https://jqlang.github.io/jq/) - Used by the Claude statusline script for JSON parsing
 - [lazygit](https://github.com/jesseduffield/lazygit) - Terminal UI for git commands
+- [Karabiner-Elements](https://karabiner-elements.pqrs.org/) - Keyboard customizer (cask)
 
 ```bash
 brew install jq lazygit
+brew install --cask karabiner-elements
 ```
 
 ## Installation

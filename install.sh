@@ -6,13 +6,15 @@ DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # Install Homebrew dependencies
 BREW_DEPS=(jq lazygit)
+BREW_CASKS=(karabiner-elements)
 
 if command -v brew &>/dev/null; then
     echo "Installing dependencies via Homebrew..."
     brew install "${BREW_DEPS[@]}"
+    brew install --cask "${BREW_CASKS[@]}"
 else
     echo "Warning: Homebrew not found. Please install the following dependencies manually:"
-    printf '  - %s\n' "${BREW_DEPS[@]}"
+    printf '  - %s\n' "${BREW_DEPS[@]}" "${BREW_CASKS[@]}"
 fi
 
 echo ""
@@ -41,6 +43,9 @@ create_symlink "$DOTFILES_DIR/ghostty/config" "$HOME/Library/Application Support
 # Claude
 create_symlink "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
 create_symlink "$DOTFILES_DIR/claude/statusline.sh" "$HOME/.claude/statusline.sh"
+
+# Karabiner
+create_symlink "$DOTFILES_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
 
 echo ""
 echo "Dotfiles installed successfully!"
