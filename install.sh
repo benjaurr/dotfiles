@@ -6,7 +6,7 @@ DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # Install Homebrew dependencies
 BREW_DEPS=(jq lazygit)
-BREW_CASKS=(karabiner-elements)
+BREW_CASKS=(karabiner-elements ghostty)
 
 if command -v brew &>/dev/null; then
     echo "Installing dependencies via Homebrew..."

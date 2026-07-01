@@ -29,8 +29,14 @@ return {
   cmd = { "CodeSnap", "CodeSnapSave", "CodeSnapHighlight", "CodeSnapSaveHighlight" },
   opts = {
     save_path = "~/Pictures/CodeSnap",
-    has_breadcrumbs = true,
-    bg_padding = 0,
+    snapshot_config = {
+      background = "#FFFFFF",
+      code_config = {
+        breadcrumbs = {
+          enable = true,
+        },
+      },
+    },
   },
   keys = {
     {

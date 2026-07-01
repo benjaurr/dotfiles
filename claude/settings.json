@@ -2,7 +2,7 @@
   "permissions": {
     "defaultMode": "auto"
   },
-  "model": "opus[1m]",
+  "model": "sonnet",
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh",
@@ -11,7 +11,7 @@
   "enabledPlugins": {
     "figma@claude-plugins-official": true
   },
-  "effortLevel": "high",
+  "effortLevel": "low",
   "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark",
