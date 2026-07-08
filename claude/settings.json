@@ -2,14 +2,23 @@
   "permissions": {
     "defaultMode": "auto"
   },
-  "model": "sonnet",
+  "model": "claude-fable-5[1m]",
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh",
     "padding": 2
   },
   "enabledPlugins": {
-    "figma@claude-plugins-official": true
+    "figma@claude-plugins-official": true,
+    "stocks-mx@fintual": true
+  },
+  "extraKnownMarketplaces": {
+    "fintual": {
+      "source": {
+        "source": "github",
+        "repo": "fintual/plugins"
+      }
+    }
   },
   "effortLevel": "low",
   "tui": "fullscreen",

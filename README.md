@@ -8,6 +8,7 @@ Configuration files for my dev environment.
 - **Zellij** - Terminal multiplexer config
 - **Ghostty** - Terminal emulator config
 - **Claude** - Settings and statusline script
+- **Codex** - Settings and plugin config
 - **Karabiner** - Keyboard customization (Caps Lock → Escape, both shifts → Caps Lock)
 
 ## Dependencies

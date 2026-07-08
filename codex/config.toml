@@ -1,0 +1,15 @@
+model = "gpt-5.5"
+model_reasoning_effort = "low"
+service_tier = "fast"
+approvals_reviewer = "auto_review"
+
+[tui]
+status_line = ["model-with-reasoning", "context-remaining", "context-used", "five-hour-limit", "weekly-limit"]
+status_line_use_colors = true
+
+[marketplaces.fintual]
+source_type = "git"
+source = "https://github.com/fintual/plugins.git"
+
+[plugins."stocks-mx@fintual"]
+enabled = true

@@ -44,6 +44,9 @@ create_symlink "$DOTFILES_DIR/ghostty/config" "$HOME/Library/Application Support
 create_symlink "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
 create_symlink "$DOTFILES_DIR/claude/statusline.sh" "$HOME/.claude/statusline.sh"
 
+# Codex
+create_symlink "$DOTFILES_DIR/codex/config.toml" "$HOME/.codex/config.toml"
+
 # Karabiner
 create_symlink "$DOTFILES_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
 
