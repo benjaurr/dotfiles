@@ -5,7 +5,7 @@ set -e
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # Install Homebrew dependencies
-BREW_DEPS=(jq lazygit)
+BREW_DEPS=(jq lazygit colima docker docker-compose)
 BREW_CASKS=(karabiner-elements ghostty)
 
 if command -v brew &>/dev/null; then
@@ -46,6 +46,9 @@ create_symlink "$DOTFILES_DIR/claude/statusline.sh" "$HOME/.claude/statusline.sh
 
 # Codex
 create_symlink "$DOTFILES_DIR/codex/config.toml" "$HOME/.codex/config.toml"
+
+# Colima (template used when creating new colima instances)
+create_symlink "$DOTFILES_DIR/colima/default.yaml" "$HOME/.colima/_templates/default.yaml"
 
 # Karabiner
 create_symlink "$DOTFILES_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"

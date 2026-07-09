@@ -9,12 +9,15 @@ Configuration files for my dev environment.
 - **Ghostty** - Terminal emulator config
 - **Claude** - Settings and statusline script
 - **Codex** - Settings and plugin config
+- **Colima** - Container runtime VM template (vz + virtiofs, 4 CPU / 6 GiB / 30 GiB)
 - **Karabiner** - Keyboard customization (Caps Lock → Escape, both shifts → Caps Lock)
 
 ## Dependencies
 
 - [jq](https://jqlang.github.io/jq/) - Used by the Claude statusline script for JSON parsing
 - [lazygit](https://github.com/jesseduffield/lazygit) - Terminal UI for git commands
+- [colima](https://github.com/abiosoft/colima) - Container runtimes on macOS (with the docker CLI)
+- [docker-compose](https://docs.docker.com/compose/) - Registered as a docker CLI plugin so `docker compose` works
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org/) - Keyboard customizer (cask)
 - [Ghostty](https://ghostty.org/) - Terminal emulator (cask)
 
