@@ -7,6 +7,7 @@ Configuration files for my dev environment.
 - **Neovim** - LazyVim-based config
 - **Zellij** - Terminal multiplexer config
 - **Ghostty** - Terminal emulator config
+- **Git** - Global gitconfig (nvim as editor, gh credential helper, histogram diffs)
 - **Claude** - Settings and statusline script
 - **Codex** - Settings and plugin config
 - **Colima** - Container runtime VM template (vz + virtiofs, 4 CPU / 6 GiB / 30 GiB)

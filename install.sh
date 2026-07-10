@@ -47,6 +47,9 @@ create_symlink "$DOTFILES_DIR/claude/statusline.sh" "$HOME/.claude/statusline.sh
 # Codex
 create_symlink "$DOTFILES_DIR/codex/config.toml" "$HOME/.codex/config.toml"
 
+# Git
+create_symlink "$DOTFILES_DIR/git/gitconfig" "$HOME/.gitconfig"
+
 # Colima (template used when creating new colima instances)
 create_symlink "$DOTFILES_DIR/colima/default.yaml" "$HOME/.colima/_templates/default.yaml"
 
