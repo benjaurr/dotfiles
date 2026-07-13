@@ -5,7 +5,7 @@ set -e
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # Install Homebrew dependencies
-BREW_DEPS=(jq lazygit colima docker docker-compose)
+BREW_DEPS=(neovim jq lazygit colima docker docker-compose nodenv rbenv direnv)
 BREW_CASKS=(karabiner-elements ghostty)
 
 if command -v brew &>/dev/null; then
